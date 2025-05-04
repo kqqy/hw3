@@ -8,6 +8,9 @@ body{
     padding: 15px;
     border-bottom: #e6e6e6 solid 1px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .banner img.logo{
     width: 48px;
@@ -100,6 +103,7 @@ body{
     margin-top: 30px;
     font-size: 14px;
     color: #7E7E7E;
+    margin-bottom: 30px;
 }
 a{
     color: #ff9100;
@@ -139,11 +143,16 @@ a{
 .inputs input{
     width: 328px;
     padding: 12px;
-    border: 1px solid #cccccc;
+    border: 1px solid transparent;
     border-radius: 4px;
     font-size: 16px;
     box-sizing: border-box;
     margin-top: 30px;
+    background-color: #F3F3F3;
+}
+.inputs input:focus{
+    border: #ff9100 solid 3px;
+    outline: none;
 }
 
 .nextbtn{
@@ -174,4 +183,71 @@ a{
     margin-top: 1px;
     align-self: flex-start;
     margin-bottom: 15px;
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.img-apple{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    border: dimgray solid 1px;
+    cursor: pointer;
+
+}
+.img-apple img{
+    width: 50px;
+    height: 40px;
+}
+.img-google{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    border: dimgray solid 1px;
+    cursor: pointer;
+}
+.img-google img{
+    width: 20px;
+    height: 20px;
+}
+.img-facebook{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    border: dimgray solid 1px;
+    cursor: pointer;
+}
+.img-facebook img{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
+.img-line{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    border: dimgray solid 1px;
+    cursor: pointer;
+}
+.img-line img{
+    width: 25px;
+    height: 25px;
 }
