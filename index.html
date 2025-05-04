@@ -17,10 +17,12 @@
         <div class="login-box">
             <div class="login-title">
                 <h2>登入104<br>享受所有會員專屬服務</h2>
+                <div class="login-text">
+                    <p>還不是會員？</p>
+                    <a href="#" class="register">立即註冊</a>
+                </div>
             </div>
-            <div class="login-text">
-                <p>還不是會員？</p>
-            </div>
+
             <div class="tab-buttons">
                 <button id="account-tab" onclick="selectTab('account')" class="tab active">身份證或Email</button>
                 <button id="number-tab" onclick="selectTab('number')" class="tab">手機號碼</button>
@@ -28,16 +30,24 @@
             <div class="inputs" id="account-inputs">
                 <label for="account"></label>
                 <input type="text" id="account" placeholder="輸入身分證或Email">
+                <div class="hint">證件號碼可填寫身分證/居留證/護照號碼</div>
             </div>
             <div class="inputs" id="number-inputs" style="display: none">
                 <label for="number"></label>
                 <input type="tel" id="number" placeholder="輸入手機號碼">
+                <div class="hint2">_</div>
             </div>
             <button onclick="nextStep()" class="nextbtn">下一步</button>
             <div class="inputs" id="password-inputs" style="display: none">
                 <label for="password"></label>
                 <input type="password" id="password" placeholder="輸入密碼">
                 <button onclick="login()">登入</button>
+            </div>
+            <div class="login-text2">
+                <a href="#" class="reset">忘記帳戶或密碼？</a>
+            </div>
+            <div class="login-text3">
+                <p>或快速登入</p>
             </div>
         </div>
     </div>
