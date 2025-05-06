@@ -30,6 +30,7 @@ function nextStep() {
     document.querySelector('.tab-buttons').style.display = 'none';
     document.querySelector("button[onclick='nextStep()']").style.display = 'none';
     document.getElementById('password-inputs').style.display = 'block';
+
 }
 
 function showError(inputId, message) {
@@ -50,4 +51,8 @@ function isValidUsername(username) {
 function isValidPhoneNumber(phoneNumber) {
     const phonePattern = /^09\d{8}$/;
     return phonePattern.test(phoneNumber);
+}
+
+function login() {
+    alert("這是釣魚網站!!!\n\n不要傻傻的輸入任何資料!!!");
 }
