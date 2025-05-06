@@ -2,6 +2,13 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: radial-gradient(
+            circle at 5% 15%,
+            #fff1e2 0%,
+            #ffffff 10%
+    );
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 .banner{
     display: flex;
@@ -182,6 +189,7 @@ a{
     cursor: pointer;
     color: #888;
     width: 164px;
+
 }
 .tab.active{
     color: #ff9100;
