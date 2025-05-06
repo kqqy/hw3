@@ -38,18 +38,18 @@
             <div class="inputs" id="account-inputs">
                 <label for="account"></label>
                 <input type="text" id="account" placeholder="輸入身分證或Email">
-                <div class="hint">證件號碼可填寫身分證/居留證/護照號碼</div>
+                <div class="hint" id="account-hint">證件號碼可填寫身分證/居留證/護照號碼</div>
             </div>
             <div class="inputs" id="number-inputs" style="display: none">
                 <label for="number"></label>
                 <input type="tel" id="number" placeholder="輸入手機號碼">
-                <div class="hint2">_</div>
+                <div class="hint2" id="number-hint">_</div>
             </div>
             <button onclick="nextStep()" class="nextbtn">下一步</button>
             <div class="inputs" id="password-inputs" style="display: none">
                 <label for="password"></label>
                 <input type="password" id="password" placeholder="輸入密碼">
-                <button onclick="login()">登入</button>
+                <button onclick="login()" class="login-btn2">登入</button>
             </div>
             <div class="login-text2">
                 <a href="#" class="reset">忘記帳戶或密碼？</a>

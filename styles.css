@@ -160,7 +160,6 @@ body{
 }
 .login-text5 a{
     color: #7E7E7E;
-    text-decoration: none;
     text-decoration: underline;
 }
 a{
@@ -225,8 +224,16 @@ a{
     margin-top: 10px;
     margin: 0 auto;
 }
-.nextbtn:hover{
+.login-btn2{
+    width: 328px;
+    padding: 12px;
     background-color: #ff9100;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px auto 0;
 }
 .hint{
     font-size: 12px;
@@ -234,6 +241,15 @@ a{
     margin-top: 1px;
     align-self: flex-start;
     margin-bottom: 15px;
+}
+.hint.error{
+    color: red;
+}
+.hint2.error{
+    color: red;
+}
+.inputs input.error{
+    border: red solid 3px;
 }
 .hint2{
     font-size: 12px;
